@@ -28,14 +28,14 @@ module.exports = function(robot) {
 
     // Constants.
     var STANDUP_MESSAGES = [
-        "Standup time!",
-        "Time for standup, y'all.",
-        "It's standup time once again!",
-        "Get up, stand up (it's time for our standup)",
-        "Standup time. Get up, humans",
-        "Standup time! Now! Go go go!"
+        "<!channel> Standup time!",
+        "<!channel> Time for standup, y'all.",
+        "<!channel> It's standup time once again!",
+        "<!channel> Get up, stand up (it's time for our standup)",
+        "<!channel> Standup time. Get up, humans",
+        "<!channel> Standup time! Now! Go go go!"
     ];
-    
+
     var PREPEND_MESSAGE = process.env.HUBOT_STANDUP_PREPEND || "";
     if (PREPEND_MESSAGE.length > 0 && PREPEND_MESSAGE.slice(-1) !== ' ') {
         PREPEND_MESSAGE += ' ';
